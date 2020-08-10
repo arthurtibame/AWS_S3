@@ -1,0 +1,667 @@
+11:15:22,91 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+11:15:22,93 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+11:15:22,93 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+11:15:22,95 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+11:15:22,95 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+11:15:22,96 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+11:15:22,97 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+11:15:22,99 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+11:15:22,99 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+11:15:22,99 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+11:15:22,99 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+11:15:22,101 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\endpoints.json
+11:15:22,105 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000002B50E32FEA0>
+11:15:22,126 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+11:15:22,133 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000002B50E307B70>
+11:15:22,133 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000002B50E3D4A60>
+11:15:22,158 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000002B50E307950>
+11:15:22,160 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+11:15:22,161 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\_retry.json
+11:15:22,161 botocore.client DEBUG Registering retry handlers for service: s3
+11:15:22,163 botocore.hooks DEBUG Event before-parameter-build.s3.DeleteObject: calling handler <function validate_bucket_name at 0x000002B50E368400>
+11:15:22,163 botocore.hooks DEBUG Event before-parameter-build.s3.DeleteObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000002B50E9217F0>>
+11:15:22,163 botocore.hooks DEBUG Event before-parameter-build.s3.DeleteObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000002B50E921E80>>
+11:15:22,163 botocore.hooks DEBUG Event before-parameter-build.s3.DeleteObject: calling handler <function generate_idempotent_uuid at 0x000002B50E368268>
+11:15:22,163 botocore.hooks DEBUG Event before-call.s3.DeleteObject: calling handler <function add_expect_header at 0x000002B50E368730>
+11:15:22,163 botocore.hooks DEBUG Event before-call.s3.DeleteObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000002B50E9217F0>>
+11:15:22,163 botocore.hooks DEBUG Event before-call.s3.DeleteObject: calling handler <function inject_api_version_header_if_needed at 0x000002B50E3699D8>
+11:15:22,163 botocore.endpoint DEBUG Making request for OperationModel(name=DeleteObject) with params: {'url_path': '/iii-tutorial-v2/student14/test1.py', 'query_string': {}, 'method': 'DELETE', 'headers': {'User-Agent': 'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38'}, 'body': b'', 'url': 'https://s3.amazonaws.com/iii-tutorial-v2/student14/test1.py', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002B50E64DBA8>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'iii-tutorial-v2'}}}
+11:15:22,164 botocore.hooks DEBUG Event request-created.s3.DeleteObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002B50E64D6D8>>
+11:15:22,164 botocore.hooks DEBUG Event choose-signer.s3.DeleteObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000002B50E633160>>
+11:15:22,164 botocore.hooks DEBUG Event choose-signer.s3.DeleteObject: calling handler <function set_operation_specific_signer at 0x000002B50E368158>
+11:15:22,164 botocore.hooks DEBUG Event before-sign.s3.DeleteObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000002B50E921EF0>>
+11:15:22,164 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+11:15:22,164 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.amazonaws.com/iii-tutorial-v2/student14/test1.py
+11:15:22,164 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.amazonaws.com/student14/test1.py
+11:15:22,164 botocore.auth DEBUG Calculating signature using v4 auth.
+11:15:22,164 botocore.auth DEBUG CanonicalRequest:
+DELETE
+/student14/test1.py
+
+host:iii-tutorial-v2.s3.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20200810T031522Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+11:15:22,165 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T031522Z
+20200810/us-east-1/s3/aws4_request
+9f20ac5c47dc84d80831a603bbaba740066f91cfc264f350fda85036854de7c2
+11:15:22,165 botocore.auth DEBUG Signature:
+abd649225ee139d9275d65256fd48411627d1c0a9bc41fece8f76b7d906d2d63
+11:15:22,165 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=DELETE, url=https://iii-tutorial-v2.s3.amazonaws.com/student14/test1.py, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'X-Amz-Date': b'20200810T031522Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=abd649225ee139d9275d65256fd48411627d1c0a9bc41fece8f76b7d906d2d63', 'Content-Length': '0'}>
+11:15:22,165 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.amazonaws.com:443
+11:15:22,359 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.amazonaws.com:443 "DELETE /student14/test1.py HTTP/1.1" 400 None
+11:15:22,359 botocore.parsers DEBUG Response headers: {'x-amz-request-id': 'BABDE4C0D194AFBB', 'x-amz-id-2': 'PZLKhweV4DW7I6QMQbb4WMHAQaKtYAew2SH/eqT5wpQYnfeagtoeZcwWz9nH+yhKv0tj4CaboXI=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Mon, 10 Aug 2020 03:15:22 GMT', 'Connection': 'close', 'Server': 'AmazonS3'}
+11:15:22,359 botocore.parsers DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>AuthorizationHeaderMalformed</Code><Message>The authorization header is malformed; the region \'us-east-1\' is wrong; expecting \'ap-northeast-1\'</Message><Region>ap-northeast-1</Region><RequestId>BABDE4C0D194AFBB</RequestId><HostId>PZLKhweV4DW7I6QMQbb4WMHAQaKtYAew2SH/eqT5wpQYnfeagtoeZcwWz9nH+yhKv0tj4CaboXI=</HostId></Error>'
+11:15:22,361 botocore.hooks DEBUG Event needs-retry.s3.DeleteObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000002B50E921B38>
+11:15:22,361 botocore.retryhandler DEBUG No retry needed.
+11:15:22,361 botocore.hooks DEBUG Event needs-retry.s3.DeleteObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000002B50E9217F0>>
+11:15:22,361 botocore.utils DEBUG S3 client configured for region us-east-1 but the bucket iii-tutorial-v2 is in region ap-northeast-1; Please configure the proper region to avoid multiple unnecessary redirects and signing attempts.
+11:15:22,361 botocore.utils DEBUG Updating URI from https://s3.amazonaws.com/iii-tutorial-v2/student14/test1.py to https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/test1.py
+11:15:22,361 botocore.endpoint DEBUG Response received to retry, sleeping for 0 seconds
+11:15:22,361 botocore.hooks DEBUG Event request-created.s3.DeleteObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002B50E64D6D8>>
+11:15:22,362 botocore.hooks DEBUG Event choose-signer.s3.DeleteObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000002B50E633160>>
+11:15:22,362 botocore.hooks DEBUG Event choose-signer.s3.DeleteObject: calling handler <function set_operation_specific_signer at 0x000002B50E368158>
+11:15:22,362 botocore.hooks DEBUG Event before-sign.s3.DeleteObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000002B50E921EF0>>
+11:15:22,362 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/test1.py
+11:15:22,362 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/test1.py
+11:15:22,362 botocore.auth DEBUG Calculating signature using v4 auth.
+11:15:22,362 botocore.auth DEBUG CanonicalRequest:
+DELETE
+/student14/test1.py
+
+host:iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20200810T031522Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+11:15:22,362 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T031522Z
+20200810/ap-northeast-1/s3/aws4_request
+5b4da24fb856d4ff9c3d9a31f9f2dbabc92db02d2753039b9c80e973282c05be
+11:15:22,362 botocore.auth DEBUG Signature:
+913a7af1826cd538efb5d6d084503dbaa87cba571183b64b986326f68fc314ea
+11:15:22,362 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=DELETE, url=https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/test1.py, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'X-Amz-Date': b'20200810T031522Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/ap-northeast-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=913a7af1826cd538efb5d6d084503dbaa87cba571183b64b986326f68fc314ea', 'Content-Length': '0'}>
+11:15:22,363 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443
+11:15:22,595 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443 "DELETE /student14/test1.py HTTP/1.1" 204 0
+11:15:22,595 botocore.parsers DEBUG Response headers: {'x-amz-id-2': '/8Lth7NBtqA8CNYedUebwKTlgrWtO5ohInMyKHjXNZsnD3ynjVCsDgQR0UcSE/MmoPmnGGPjLm0=', 'x-amz-request-id': '712AAB73BD720FCC', 'Date': 'Mon, 10 Aug 2020 03:15:24 GMT', 'Server': 'AmazonS3'}
+11:15:22,595 botocore.parsers DEBUG Response body:
+b''
+11:15:22,595 botocore.hooks DEBUG Event needs-retry.s3.DeleteObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000002B50E921B38>
+11:15:22,595 botocore.retryhandler DEBUG No retry needed.
+11:15:22,595 botocore.hooks DEBUG Event needs-retry.s3.DeleteObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000002B50E9217F0>>
+11:15:22,596 botocore.utils DEBUG S3 request was previously redirected, not redirecting.
+13:02:00,387 werkzeug WARNING  * Debugger is active!
+13:02:00,394 werkzeug INFO  * Debugger PIN: 271-524-996
+13:02:00,401 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:03:02,926 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:03:03,617 werkzeug WARNING  * Debugger is active!
+13:03:03,624 werkzeug INFO  * Debugger PIN: 271-524-996
+13:03:03,631 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:04:14,505 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:04:15,210 werkzeug WARNING  * Debugger is active!
+13:04:15,218 werkzeug INFO  * Debugger PIN: 271-524-996
+13:04:15,225 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:04:16,263 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:04:16,934 werkzeug WARNING  * Debugger is active!
+13:04:16,941 werkzeug INFO  * Debugger PIN: 271-524-996
+13:04:16,948 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:05:27,727 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:05:28,405 werkzeug WARNING  * Debugger is active!
+13:05:28,412 werkzeug INFO  * Debugger PIN: 271-524-996
+13:05:28,418 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:05:37,38 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api-data.line.me:443
+13:05:37,456 urllib3.connectionpool DEBUG https://api-data.line.me:443 "GET /v2/bot/message/12473214161896/content HTTP/1.1" 200 90525
+13:05:37,534 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.line.me:443
+13:05:37,658 urllib3.connectionpool DEBUG https://api.line.me:443 "POST /v2/bot/message/reply HTTP/1.1" 200 2
+13:05:37,660 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+13:05:37,661 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+13:05:37,662 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+13:05:37,663 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+13:05:37,664 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+13:05:37,664 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+13:05:37,665 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+13:05:37,667 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+13:05:37,667 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+13:05:37,667 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+13:05:37,667 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+13:05:37,668 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\endpoints.json
+13:05:37,673 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000018B24E93158>
+13:05:37,693 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+13:05:37,700 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000018B24E68D90>
+13:05:37,700 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000018B250D5620>
+13:05:37,730 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000018B24E68B70>
+13:05:37,732 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+13:05:37,733 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\_retry.json
+13:05:37,733 botocore.client DEBUG Registering retry handlers for service: s3
+13:05:37,734 s3transfer.utils DEBUG Acquiring 0
+13:05:37,735 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000018B25F05A58>}) about to wait for the following futures []
+13:05:37,735 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000018B25F05A58>}) done waiting for dependent futures
+13:05:37,735 s3transfer.tasks DEBUG Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000018B25F05A58>}) with kwargs {'client': <botocore.client.S3 object at 0x0000018B25C47668>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000018B25F053C8>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000018B25F05400>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000018B25F055C0>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000018B25F05A58>}
+13:05:37,735 s3transfer.futures DEBUG Submitting task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000018B25F055C0> for transfer request: 0.
+13:05:37,735 s3transfer.utils DEBUG Acquiring 0
+13:05:37,736 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) about to wait for the following futures []
+13:05:37,736 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) done waiting for dependent futures
+13:05:37,736 s3transfer.tasks DEBUG Executing task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000018B25C47668>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000018B25F05D30>, 'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000018B24EB76A8>
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000018B24EB4AE8>
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000018B24EB7F28>
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000018B24EB4A60>
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000018B25D45BA8>>
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000018B25F05278>>
+13:05:37,736 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000018B24EB48C8>
+13:05:37,737 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x0000018B24D33AE8>
+13:05:37,737 s3transfer.utils DEBUG Releasing acquire 0/None
+13:05:37,741 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000018B24EB4D90>
+13:05:37,741 botocore.handlers DEBUG Adding expect 100 continue header to request.
+13:05:37,741 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000018B25D45BA8>>
+13:05:37,741 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000018B24EB80D0>
+13:05:37,741 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/iii-tutorial-v2/student14/%7Bfile_name%7D', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': '9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000018B25F05D30>, 'url': 'https://s3.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x0000018B25C47F98>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'iii-tutorial-v2'}}}
+13:05:37,742 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000018B25CF48C8>
+13:05:37,742 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000018B25C47B38>>
+13:05:37,742 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000018B25C252B0>>
+13:05:37,742 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000018B24EB47B8>
+13:05:37,742 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000018B25F052E8>>
+13:05:37,742 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+13:05:37,742 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D
+13:05:37,742 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.amazonaws.com/student14/%7Bfile_name%7D
+13:05:37,742 botocore.auth DEBUG Calculating signature using v4 auth.
+13:05:37,742 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/%7Bfile_name%7D
+
+content-md5:9Hmk/2juI0ew+k+OM6NnmA==
+host:iii-tutorial-v2.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T050537Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:05:37,742 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T050537Z
+20200810/us-east-1/s3/aws4_request
+841ddfc2f9d852b8690566b3da5e9e7b80faeccf46abbfb27d502267c8315b34
+13:05:37,743 botocore.auth DEBUG Signature:
+be67c2616308add9bb9e644d9111dc48e51ea95feb9339f97b52a67dc31b84b5
+13:05:37,743 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000018B25CF4950>
+13:05:37,743 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.amazonaws.com/student14/%7Bfile_name%7D, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T050537Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=be67c2616308add9bb9e644d9111dc48e51ea95feb9339f97b52a67dc31b84b5', 'Content-Length': '90525'}>
+13:05:37,743 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.amazonaws.com:443
+13:05:37,898 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:05:37,940 botocore.awsrequest DEBUG Received a non 100 Continue response from the server, NOT sending request body.
+13:05:37,941 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.amazonaws.com:443 "PUT /student14/%7Bfile_name%7D HTTP/1.1" 400 None
+13:05:37,941 botocore.parsers DEBUG Response headers: {'x-amz-request-id': '04AC5600F8B37827', 'x-amz-id-2': 'zotPzoQcJrbe8C/1v0EY9llbpPPSeAssHPP+shVExkIbXGxUqRV31aoCnJvL77pQtrLk9SwSAjE=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Mon, 10 Aug 2020 05:05:38 GMT', 'Connection': 'close', 'Server': 'AmazonS3'}
+13:05:37,941 botocore.parsers DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>AuthorizationHeaderMalformed</Code><Message>The authorization header is malformed; the region \'us-east-1\' is wrong; expecting \'ap-northeast-1\'</Message><Region>ap-northeast-1</Region><RequestId>04AC5600F8B37827</RequestId><HostId>zotPzoQcJrbe8C/1v0EY9llbpPPSeAssHPP+shVExkIbXGxUqRV31aoCnJvL77pQtrLk9SwSAjE=</HostId></Error>'
+13:05:37,943 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000018B25D45EF0>
+13:05:37,943 botocore.retryhandler DEBUG No retry needed.
+13:05:37,943 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000018B25D45BA8>>
+13:05:37,943 botocore.utils DEBUG S3 client configured for region us-east-1 but the bucket iii-tutorial-v2 is in region ap-northeast-1; Please configure the proper region to avoid multiple unnecessary redirects and signing attempts.
+13:05:37,943 botocore.utils DEBUG Updating URI from https://s3.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D to https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D
+13:05:37,943 botocore.endpoint DEBUG Response received to retry, sleeping for 0 seconds
+13:05:37,943 botocore.awsrequest DEBUG Rewinding stream: <s3transfer.utils.ReadFileChunk object at 0x0000018B25F05D30>
+13:05:37,944 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000018B25CF48C8>
+13:05:37,944 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000018B25C47B38>>
+13:05:37,944 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000018B25C252B0>>
+13:05:37,944 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000018B24EB47B8>
+13:05:37,944 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000018B25F052E8>>
+13:05:37,944 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D
+13:05:37,944 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/%7Bfile_name%7D
+13:05:37,944 botocore.auth DEBUG Calculating signature using v4 auth.
+13:05:37,944 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/%7Bfile_name%7D
+
+content-md5:9Hmk/2juI0ew+k+OM6NnmA==
+host:iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T050537Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:05:37,944 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T050537Z
+20200810/ap-northeast-1/s3/aws4_request
+5ddc25d49b18db4f3f2bf6baca242b82a87e144fec9f343376613801027ca562
+13:05:37,945 botocore.auth DEBUG Signature:
+d3d7b700e87e3ec9f71d4d4bdc0daab79a3457a4d3363a3c5a089b8ca379858b
+13:05:37,945 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000018B25CF4950>
+13:05:37,945 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/%7Bfile_name%7D, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T050537Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/ap-northeast-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=d3d7b700e87e3ec9f71d4d4bdc0daab79a3457a4d3363a3c5a089b8ca379858b', 'Content-Length': '90525'}>
+13:05:37,945 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443
+13:05:38,91 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:05:38,164 botocore.awsrequest DEBUG 100 Continue response seen, now sending request body.
+13:05:38,348 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443 "PUT /student14/%7Bfile_name%7D HTTP/1.1" 200 0
+13:05:38,349 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'KRv5/jO+ah55mNoOViN0TpZI4qzMUzxTUFy64onEAfAkpw7u2vTBnGmOIWYiCGvZEebHo9YjinU=', 'x-amz-request-id': '28A5A0713CE38DF2', 'Date': 'Mon, 10 Aug 2020 05:05:39 GMT', 'ETag': '"f479a4ff68ee2347b0fa4f8e33a36798"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+13:05:38,349 botocore.parsers DEBUG Response body:
+b''
+13:05:38,349 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000018B25D45EF0>
+13:05:38,349 botocore.retryhandler DEBUG No retry needed.
+13:05:38,349 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000018B25D45BA8>>
+13:05:38,349 botocore.utils DEBUG S3 request was previously redirected, not redirecting.
+13:05:38,349 s3transfer.utils DEBUG Releasing acquire 0/None
+13:05:38,352 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.line.me:443
+13:05:38,460 urllib3.connectionpool DEBUG https://api.line.me:443 "POST /v2/bot/message/reply HTTP/1.1" 400 None
+13:05:38,469 werkzeug INFO 127.0.0.1 - - [10/Aug/2020 13:05:38] "[35m[1mPOST /callback HTTP/1.1[0m" 500 -
+13:06:48,865 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:06:49,536 werkzeug WARNING  * Debugger is active!
+13:06:49,543 werkzeug INFO  * Debugger PIN: 271-524-996
+13:06:49,550 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:06:58,757 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api-data.line.me:443
+13:06:59,78 urllib3.connectionpool DEBUG https://api-data.line.me:443 "GET /v2/bot/message/12473220311483/content HTTP/1.1" 200 90525
+13:06:59,156 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+13:06:59,159 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+13:06:59,160 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+13:06:59,163 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+13:06:59,163 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+13:06:59,164 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+13:06:59,165 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+13:06:59,170 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+13:06:59,171 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+13:06:59,171 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+13:06:59,171 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+13:06:59,174 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\endpoints.json
+13:06:59,179 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x00000219AE0F3158>
+13:06:59,200 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+13:06:59,206 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x00000219AE0C8D90>
+13:06:59,206 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x00000219AE3356A8>
+13:06:59,237 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x00000219AE0C8B70>
+13:06:59,239 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+13:06:59,239 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\_retry.json
+13:06:59,240 botocore.client DEBUG Registering retry handlers for service: s3
+13:06:59,241 s3transfer.utils DEBUG Acquiring 0
+13:06:59,241 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000219AF183A20>}) about to wait for the following futures []
+13:06:59,241 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000219AF183A20>}) done waiting for dependent futures
+13:06:59,242 s3transfer.tasks DEBUG Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000219AF183A20>}) with kwargs {'client': <botocore.client.S3 object at 0x00000219AEE976A0>, 'config': <boto3.s3.transfer.TransferConfig object at 0x00000219AF183390>, 'osutil': <s3transfer.utils.OSUtils object at 0x00000219AF1833C8>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x00000219AF183588>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000219AF183A20>}
+13:06:59,242 s3transfer.futures DEBUG Submitting task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x00000219AF183588> for transfer request: 0.
+13:06:59,242 s3transfer.utils DEBUG Acquiring 0
+13:06:59,242 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) about to wait for the following futures []
+13:06:59,242 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) done waiting for dependent futures
+13:06:59,242 s3transfer.tasks DEBUG Executing task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x00000219AEE976A0>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x00000219AF183CF8>, 'bucket': 'iii-tutorial-v2', 'key': 'student14/{file_name}', 'extra_args': {}}
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x00000219AE1196A8>
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x00000219AE114AE8>
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x00000219AE119F28>
+13:06:59,243 s3transfer.utils DEBUG Releasing acquire 0/None
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x00000219AE114A60>
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x00000219AF144BA8>>
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x00000219AF183240>>
+13:06:59,243 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x00000219AE1148C8>
+13:06:59,244 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x00000219ADF94AE8>
+13:06:59,248 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x00000219AE114D90>
+13:06:59,248 botocore.handlers DEBUG Adding expect 100 continue header to request.
+13:06:59,248 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x00000219AF144BA8>>
+13:06:59,248 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x00000219AE1180D0>
+13:06:59,248 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/iii-tutorial-v2/student14/%7Bfile_name%7D', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': '9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x00000219AF183CF8>, 'url': 'https://s3.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x00000219AEE97FD0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'iii-tutorial-v2'}}}
+13:06:59,249 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x00000219AEF438C8>
+13:06:59,249 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x00000219AEE97B70>>
+13:06:59,249 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x00000219AEE742E8>>
+13:06:59,249 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x00000219AE1147B8>
+13:06:59,249 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x00000219AF1832B0>>
+13:06:59,249 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+13:06:59,249 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D
+13:06:59,249 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.amazonaws.com/student14/%7Bfile_name%7D
+13:06:59,249 botocore.auth DEBUG Calculating signature using v4 auth.
+13:06:59,249 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/%7Bfile_name%7D
+
+content-md5:9Hmk/2juI0ew+k+OM6NnmA==
+host:iii-tutorial-v2.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T050659Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:06:59,249 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T050659Z
+20200810/us-east-1/s3/aws4_request
+0f845cb3d95f10ae6ac58de3c5a65b458f32b12dfb5c9e28379086bf8cedb19a
+13:06:59,250 botocore.auth DEBUG Signature:
+cdc9f051c9f7ef1c2f30249878baa93f2a8cb4ab160ed6a6c2f133d0cf946d4c
+13:06:59,250 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x00000219AEF43950>
+13:06:59,250 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.amazonaws.com/student14/%7Bfile_name%7D, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T050659Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=cdc9f051c9f7ef1c2f30249878baa93f2a8cb4ab160ed6a6c2f133d0cf946d4c', 'Content-Length': '90525'}>
+13:06:59,250 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.amazonaws.com:443
+13:06:59,407 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:06:59,446 botocore.awsrequest DEBUG Received a non 100 Continue response from the server, NOT sending request body.
+13:06:59,447 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.amazonaws.com:443 "PUT /student14/%7Bfile_name%7D HTTP/1.1" 400 None
+13:06:59,447 botocore.parsers DEBUG Response headers: {'x-amz-request-id': '230FF49F9BD5AB1E', 'x-amz-id-2': '1s8wXXr5NaIoZn0vuat4MeP+oU3FJe+cT/TMDDXCDzaYFq5WB2L6RHEEQ3A6s2pFH8Voo8AuU58=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Mon, 10 Aug 2020 05:06:59 GMT', 'Connection': 'close', 'Server': 'AmazonS3'}
+13:06:59,447 botocore.parsers DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>AuthorizationHeaderMalformed</Code><Message>The authorization header is malformed; the region \'us-east-1\' is wrong; expecting \'ap-northeast-1\'</Message><Region>ap-northeast-1</Region><RequestId>230FF49F9BD5AB1E</RequestId><HostId>1s8wXXr5NaIoZn0vuat4MeP+oU3FJe+cT/TMDDXCDzaYFq5WB2L6RHEEQ3A6s2pFH8Voo8AuU58=</HostId></Error>'
+13:06:59,449 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x00000219AF144EB8>
+13:06:59,449 botocore.retryhandler DEBUG No retry needed.
+13:06:59,449 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x00000219AF144BA8>>
+13:06:59,449 botocore.utils DEBUG S3 client configured for region us-east-1 but the bucket iii-tutorial-v2 is in region ap-northeast-1; Please configure the proper region to avoid multiple unnecessary redirects and signing attempts.
+13:06:59,449 botocore.utils DEBUG Updating URI from https://s3.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D to https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D
+13:06:59,449 botocore.endpoint DEBUG Response received to retry, sleeping for 0 seconds
+13:06:59,449 botocore.awsrequest DEBUG Rewinding stream: <s3transfer.utils.ReadFileChunk object at 0x00000219AF183CF8>
+13:06:59,449 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x00000219AEF438C8>
+13:06:59,449 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x00000219AEE97B70>>
+13:06:59,450 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x00000219AEE742E8>>
+13:06:59,450 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x00000219AE1147B8>
+13:06:59,450 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x00000219AF1832B0>>
+13:06:59,450 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/%7Bfile_name%7D
+13:06:59,450 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/%7Bfile_name%7D
+13:06:59,450 botocore.auth DEBUG Calculating signature using v4 auth.
+13:06:59,450 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/%7Bfile_name%7D
+
+content-md5:9Hmk/2juI0ew+k+OM6NnmA==
+host:iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T050659Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:06:59,450 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T050659Z
+20200810/ap-northeast-1/s3/aws4_request
+5d448a1844d781a387a4cdcf1feab76010b5aca9917daa33837d6beeb407d3b1
+13:06:59,450 botocore.auth DEBUG Signature:
+0e1075a009be4de25b8b9126fb21f38b9d907e3fdbe723bf1176a02ce2de4e39
+13:06:59,450 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x00000219AEF43950>
+13:06:59,450 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/%7Bfile_name%7D, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T050659Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/ap-northeast-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=0e1075a009be4de25b8b9126fb21f38b9d907e3fdbe723bf1176a02ce2de4e39', 'Content-Length': '90525'}>
+13:06:59,451 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443
+13:06:59,634 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:06:59,708 botocore.awsrequest DEBUG 100 Continue response seen, now sending request body.
+13:06:59,866 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443 "PUT /student14/%7Bfile_name%7D HTTP/1.1" 200 0
+13:06:59,867 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'rHp9gheEQamZ+s2UwLWIqjg03FI2BvhZ5LAyJnFdIgm0kHNKCIhaVo9MWozV/yuGcLqYU5gWloc=', 'x-amz-request-id': '2B71D22F2AE22BB7', 'Date': 'Mon, 10 Aug 2020 05:07:01 GMT', 'ETag': '"f479a4ff68ee2347b0fa4f8e33a36798"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+13:06:59,867 botocore.parsers DEBUG Response body:
+b''
+13:06:59,867 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x00000219AF144EB8>
+13:06:59,867 botocore.retryhandler DEBUG No retry needed.
+13:06:59,867 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x00000219AF144BA8>>
+13:06:59,868 botocore.utils DEBUG S3 request was previously redirected, not redirecting.
+13:06:59,868 s3transfer.utils DEBUG Releasing acquire 0/None
+13:06:59,874 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.line.me:443
+13:07:00,1 urllib3.connectionpool DEBUG https://api.line.me:443 "POST /v2/bot/message/reply HTTP/1.1" 200 22
+13:07:00,4 werkzeug INFO 127.0.0.1 - - [10/Aug/2020 13:07:00] "[37mPOST /callback HTTP/1.1[0m" 200 -
+13:07:44,781 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:07:45,449 werkzeug WARNING  * Debugger is active!
+13:07:45,456 werkzeug INFO  * Debugger PIN: 271-524-996
+13:07:45,463 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:07:51,142 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api-data.line.me:443
+13:07:51,622 urllib3.connectionpool DEBUG https://api-data.line.me:443 "GET /v2/bot/message/12473224240945/content HTTP/1.1" 200 90525
+13:07:51,732 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+13:07:51,734 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+13:07:51,734 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+13:07:51,736 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+13:07:51,736 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+13:07:51,736 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+13:07:51,737 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+13:07:51,739 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+13:07:51,739 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+13:07:51,739 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+13:07:51,739 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+13:07:51,741 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\endpoints.json
+13:07:51,746 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000020D43E43158>
+13:07:51,766 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+13:07:51,772 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000020D43E18D90>
+13:07:51,772 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000020D440856A8>
+13:07:51,803 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000020D43E18B70>
+13:07:51,805 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+13:07:51,806 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\_retry.json
+13:07:51,806 botocore.client DEBUG Registering retry handlers for service: s3
+13:07:51,808 s3transfer.utils DEBUG Acquiring 0
+13:07:51,808 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000020D44ECDBE0>}) about to wait for the following futures []
+13:07:51,808 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000020D44ECDBE0>}) done waiting for dependent futures
+13:07:51,808 s3transfer.tasks DEBUG Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000020D44ECDBE0>}) with kwargs {'client': <botocore.client.S3 object at 0x0000020D44BD5898>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000020D44ECD5C0>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000020D44108B70>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000020D44ECD780>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000020D44ECDBE0>}
+13:07:51,809 s3transfer.futures DEBUG Submitting task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473224240945.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000020D44ECD780> for transfer request: 0.
+13:07:51,809 s3transfer.utils DEBUG Acquiring 0
+13:07:51,809 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473224240945.jpg', 'extra_args': {}}) about to wait for the following futures []
+13:07:51,809 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473224240945.jpg', 'extra_args': {}}) done waiting for dependent futures
+13:07:51,809 s3transfer.tasks DEBUG Executing task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473224240945.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000020D44BD5898>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000020D44ECDE10>, 'bucket': 'iii-tutorial-v2', 'key': 'student14/12473224240945.jpg', 'extra_args': {}}
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000020D43E696A8>
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000020D43E65AE8>
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000020D43E69F28>
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000020D43E65A60>
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000020D44E94E10>>
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000020D44ECD4A8>>
+13:07:51,810 s3transfer.utils DEBUG Releasing acquire 0/None
+13:07:51,810 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000020D43E658C8>
+13:07:51,811 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x0000020D43CE3AE8>
+13:07:51,815 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000020D43E65D90>
+13:07:51,815 botocore.handlers DEBUG Adding expect 100 continue header to request.
+13:07:51,815 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000020D44E94E10>>
+13:07:51,815 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000020D43E680D0>
+13:07:51,815 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/iii-tutorial-v2/student14/12473224240945.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': '9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000020D44ECDE10>, 'url': 'https://s3.amazonaws.com/iii-tutorial-v2/student14/12473224240945.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x0000020D42849320>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'iii-tutorial-v2'}}}
+13:07:51,815 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000020D44C948C8>
+13:07:51,815 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000020D44BD5D68>>
+13:07:51,815 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000020D44BAF4A8>>
+13:07:51,815 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000020D43E657B8>
+13:07:51,816 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000020D4357EA20>>
+13:07:51,816 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+13:07:51,816 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.amazonaws.com/iii-tutorial-v2/student14/12473224240945.jpg
+13:07:51,816 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.amazonaws.com/student14/12473224240945.jpg
+13:07:51,816 botocore.auth DEBUG Calculating signature using v4 auth.
+13:07:51,816 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/12473224240945.jpg
+
+content-md5:9Hmk/2juI0ew+k+OM6NnmA==
+host:iii-tutorial-v2.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T050751Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:07:51,816 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T050751Z
+20200810/us-east-1/s3/aws4_request
+e03c1e25a4264b44c439a0db25fc287195d4522a5c32e6c7f67acb70b3396d73
+13:07:51,816 botocore.auth DEBUG Signature:
+534ed283a000b320c0fd2a60cb647db79666022c307256046342ec73031d9f7b
+13:07:51,816 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000020D44C94950>
+13:07:51,816 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.amazonaws.com/student14/12473224240945.jpg, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T050751Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=534ed283a000b320c0fd2a60cb647db79666022c307256046342ec73031d9f7b', 'Content-Length': '90525'}>
+13:07:51,817 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.amazonaws.com:443
+13:07:51,968 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:07:52,15 botocore.awsrequest DEBUG Received a non 100 Continue response from the server, NOT sending request body.
+13:07:52,15 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.amazonaws.com:443 "PUT /student14/12473224240945.jpg HTTP/1.1" 400 None
+13:07:52,16 botocore.parsers DEBUG Response headers: {'x-amz-request-id': '1G9YAN5XAK4RFYDP', 'x-amz-id-2': 'lpYlK9x3WFG2cVQZOUGE1N+t3UDr74yMYO5220v704n95KxurD9d9jAHSSrS16rs4s4gOZ97ZYs=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Mon, 10 Aug 2020 05:07:51 GMT', 'Connection': 'close', 'Server': 'AmazonS3'}
+13:07:52,16 botocore.parsers DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>AuthorizationHeaderMalformed</Code><Message>The authorization header is malformed; the region \'us-east-1\' is wrong; expecting \'ap-northeast-1\'</Message><Region>ap-northeast-1</Region><RequestId>1G9YAN5XAK4RFYDP</RequestId><HostId>lpYlK9x3WFG2cVQZOUGE1N+t3UDr74yMYO5220v704n95KxurD9d9jAHSSrS16rs4s4gOZ97ZYs=</HostId></Error>'
+13:07:52,18 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000020D44E94CF8>
+13:07:52,18 botocore.retryhandler DEBUG No retry needed.
+13:07:52,18 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000020D44E94E10>>
+13:07:52,18 botocore.utils DEBUG S3 client configured for region us-east-1 but the bucket iii-tutorial-v2 is in region ap-northeast-1; Please configure the proper region to avoid multiple unnecessary redirects and signing attempts.
+13:07:52,18 botocore.utils DEBUG Updating URI from https://s3.amazonaws.com/iii-tutorial-v2/student14/12473224240945.jpg to https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/12473224240945.jpg
+13:07:52,18 botocore.endpoint DEBUG Response received to retry, sleeping for 0 seconds
+13:07:52,19 botocore.awsrequest DEBUG Rewinding stream: <s3transfer.utils.ReadFileChunk object at 0x0000020D44ECDE10>
+13:07:52,19 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000020D44C948C8>
+13:07:52,19 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000020D44BD5D68>>
+13:07:52,19 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000020D44BAF4A8>>
+13:07:52,19 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000020D43E657B8>
+13:07:52,19 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000020D4357EA20>>
+13:07:52,19 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/12473224240945.jpg
+13:07:52,19 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/12473224240945.jpg
+13:07:52,19 botocore.auth DEBUG Calculating signature using v4 auth.
+13:07:52,19 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/12473224240945.jpg
+
+content-md5:9Hmk/2juI0ew+k+OM6NnmA==
+host:iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T050752Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:07:52,20 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T050752Z
+20200810/ap-northeast-1/s3/aws4_request
+78c189d4a1d0347f2f503e85e5339a1ab3d66f3dc50e958d18ef7f049559bc7f
+13:07:52,20 botocore.auth DEBUG Signature:
+f6c901cd1f874f3e964490f47cc9f0061278ce981defc3182a3af0bf3cbbcde5
+13:07:52,20 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000020D44C94950>
+13:07:52,20 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/12473224240945.jpg, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'9Hmk/2juI0ew+k+OM6NnmA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T050752Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/ap-northeast-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=f6c901cd1f874f3e964490f47cc9f0061278ce981defc3182a3af0bf3cbbcde5', 'Content-Length': '90525'}>
+13:07:52,20 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443
+13:07:52,196 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:07:52,275 botocore.awsrequest DEBUG 100 Continue response seen, now sending request body.
+13:07:52,433 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443 "PUT /student14/12473224240945.jpg HTTP/1.1" 200 0
+13:07:52,434 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'PFr3fA5lzDC27lqM/yBp0udHw9ZnCkoj/pkUzU6uRJ4XsGrqsFVHJ+sQqfd96pP0FnkPyOOlet8=', 'x-amz-request-id': '2851F0AEB2A03225', 'Date': 'Mon, 10 Aug 2020 05:07:53 GMT', 'ETag': '"f479a4ff68ee2347b0fa4f8e33a36798"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+13:07:52,434 botocore.parsers DEBUG Response body:
+b''
+13:07:52,434 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000020D44E94CF8>
+13:07:52,434 botocore.retryhandler DEBUG No retry needed.
+13:07:52,434 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000020D44E94E10>>
+13:07:52,434 botocore.utils DEBUG S3 request was previously redirected, not redirecting.
+13:07:52,434 s3transfer.utils DEBUG Releasing acquire 0/None
+13:07:52,438 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.line.me:443
+13:07:52,619 urllib3.connectionpool DEBUG https://api.line.me:443 "POST /v2/bot/message/reply HTTP/1.1" 200 2
+13:07:52,620 werkzeug INFO 127.0.0.1 - - [10/Aug/2020 13:07:52] "[37mPOST /callback HTTP/1.1[0m" 200 -
+13:18:39,945 werkzeug INFO  * Detected change in 'E:\\AWS\\app.py', reloading
+13:18:40,631 werkzeug WARNING  * Debugger is active!
+13:18:40,638 werkzeug INFO  * Debugger PIN: 271-524-996
+13:18:40,644 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:39:41,857 werkzeug INFO  * Detected change in 'E:\\AWS\\S3_demo.py', reloading
+13:39:42,537 werkzeug WARNING  * Debugger is active!
+13:39:42,544 werkzeug INFO  * Debugger PIN: 271-524-996
+13:39:42,551 werkzeug INFO  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+13:40:02,492 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api-data.line.me:443
+13:40:02,850 urllib3.connectionpool DEBUG https://api-data.line.me:443 "GET /v2/bot/message/12473367605540/content HTTP/1.1" 200 165076
+13:40:03,188 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+13:40:03,189 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+13:40:03,190 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+13:40:03,191 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+13:40:03,191 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+13:40:03,192 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+13:40:03,192 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+13:40:03,194 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+13:40:03,194 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+13:40:03,195 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+13:40:03,195 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+13:40:03,198 botocore.credentials DEBUG Looking for credentials via: env
+13:40:03,198 botocore.credentials DEBUG Looking for credentials via: assume-role
+13:40:03,198 botocore.credentials DEBUG Looking for credentials via: assume-role-with-web-identity
+13:40:03,198 botocore.credentials DEBUG Looking for credentials via: sso
+13:40:03,198 botocore.credentials DEBUG Looking for credentials via: shared-credentials-file
+13:40:03,198 botocore.credentials INFO Found credentials in shared credentials file: ~/.aws/credentials
+13:40:03,199 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\endpoints.json
+13:40:03,203 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001CE52E01F28>
+13:40:03,224 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+13:40:03,230 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001CE52DDABF8>
+13:40:03,230 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001CE53046510>
+13:40:03,261 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001CE52DDA9D8>
+13:40:03,263 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+13:40:03,264 botocore.loaders DEBUG Loading JSON file: E:\AWS\env\lib\site-packages\botocore\data\_retry.json
+13:40:03,264 botocore.client DEBUG Registering retry handlers for service: s3
+13:40:03,265 s3transfer.utils DEBUG Acquiring 0
+13:40:03,266 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x000001CE53EA5128>}) about to wait for the following futures []
+13:40:03,266 s3transfer.tasks DEBUG UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x000001CE53EA5128>}) done waiting for dependent futures
+13:40:03,266 s3transfer.tasks DEBUG Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x000001CE53EA5128>}) with kwargs {'client': <botocore.client.S3 object at 0x000001CE517D9320>, 'config': <boto3.s3.transfer.TransferConfig object at 0x000001CE53E8CA58>, 'osutil': <s3transfer.utils.OSUtils object at 0x000001CE53E8CA90>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x000001CE53E8CC50>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x000001CE53EA5128>}
+13:40:03,266 s3transfer.futures DEBUG Submitting task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473367605540.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x000001CE53E8CC50> for transfer request: 0.
+13:40:03,266 s3transfer.utils DEBUG Acquiring 0
+13:40:03,266 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473367605540.jpg', 'extra_args': {}}) about to wait for the following futures []
+13:40:03,267 s3transfer.tasks DEBUG PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473367605540.jpg', 'extra_args': {}}) done waiting for dependent futures
+13:40:03,267 s3transfer.tasks DEBUG Executing task PutObjectTask(transfer_id=0, {'bucket': 'iii-tutorial-v2', 'key': 'student14/12473367605540.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x000001CE517D9320>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x000001CE53EA5400>, 'bucket': 'iii-tutorial-v2', 'key': 'student14/12473367605540.jpg', 'extra_args': {}}
+13:40:03,267 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000001CE52E1D510>
+13:40:03,268 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000001CE52E26950>
+13:40:03,268 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000001CE52E1DD90>
+13:40:03,268 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000001CE52E268C8>
+13:40:03,268 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000001CE53E8C2B0>>
+13:40:03,268 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000001CE53E8C908>>
+13:40:03,268 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000001CE52E26730>
+13:40:03,268 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000001CE52CA4950>
+13:40:03,268 s3transfer.utils DEBUG Releasing acquire 0/None
+13:40:03,272 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000001CE52E26BF8>
+13:40:03,272 botocore.handlers DEBUG Adding expect 100 continue header to request.
+13:40:03,272 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000001CE53E8C2B0>>
+13:40:03,272 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000001CE52E1DEA0>
+13:40:03,273 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/iii-tutorial-v2/student14/12473367605540.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': 'Q8/YkWKrnvWazKkPYKf/wg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x000001CE53EA5400>, 'url': 'https://s3.amazonaws.com/iii-tutorial-v2/student14/12473367605540.jpg', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000001CE53BB7278>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'iii-tutorial-v2'}}}
+13:40:03,273 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x000001CE53C5DC80>
+13:40:03,273 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001CE53BB7240>>
+13:40:03,273 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001CE53157A20>>
+13:40:03,273 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001CE52E26620>
+13:40:03,273 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001CE53E8C978>>
+13:40:03,273 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+13:40:03,273 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.amazonaws.com/iii-tutorial-v2/student14/12473367605540.jpg
+13:40:03,274 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.amazonaws.com/student14/12473367605540.jpg
+13:40:03,274 botocore.auth DEBUG Calculating signature using v4 auth.
+13:40:03,274 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/12473367605540.jpg
+
+content-md5:Q8/YkWKrnvWazKkPYKf/wg==
+host:iii-tutorial-v2.s3.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T054003Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:40:03,274 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T054003Z
+20200810/us-east-1/s3/aws4_request
+b3589a45f75176334a530a591720c7b531fb587c4c84ee78c297d4f360993f6c
+13:40:03,274 botocore.auth DEBUG Signature:
+05be3bba95d09019671de4d756684203db74f624572779b01384899eaa96bbeb
+13:40:03,274 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x000001CE53C5DD08>
+13:40:03,274 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.amazonaws.com/student14/12473367605540.jpg, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'Q8/YkWKrnvWazKkPYKf/wg==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T054003Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/us-east-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=05be3bba95d09019671de4d756684203db74f624572779b01384899eaa96bbeb', 'Content-Length': '165076'}>
+13:40:03,275 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.amazonaws.com:443
+13:40:03,446 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:40:03,486 botocore.awsrequest DEBUG Received a non 100 Continue response from the server, NOT sending request body.
+13:40:03,486 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.amazonaws.com:443 "PUT /student14/12473367605540.jpg HTTP/1.1" 400 None
+13:40:03,487 botocore.parsers DEBUG Response headers: {'x-amz-request-id': 'A8BF26D55CFD797B', 'x-amz-id-2': 'bSnxnbZbjqnRAWKwTILyzwIPz2he8mX858hSPtZuh7mRR9DwwojIw7+/TpdBYdZQ8T4tErLshdg=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Mon, 10 Aug 2020 05:40:03 GMT', 'Connection': 'close', 'Server': 'AmazonS3'}
+13:40:03,487 botocore.parsers DEBUG Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>AuthorizationHeaderMalformed</Code><Message>The authorization header is malformed; the region \'us-east-1\' is wrong; expecting \'ap-northeast-1\'</Message><Region>ap-northeast-1</Region><RequestId>A8BF26D55CFD797B</RequestId><HostId>bSnxnbZbjqnRAWKwTILyzwIPz2he8mX858hSPtZuh7mRR9DwwojIw7+/TpdBYdZQ8T4tErLshdg=</HostId></Error>'
+13:40:03,489 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001CE53E8C5C0>
+13:40:03,489 botocore.retryhandler DEBUG No retry needed.
+13:40:03,489 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001CE53E8C2B0>>
+13:40:03,489 botocore.utils DEBUG S3 client configured for region us-east-1 but the bucket iii-tutorial-v2 is in region ap-northeast-1; Please configure the proper region to avoid multiple unnecessary redirects and signing attempts.
+13:40:03,489 botocore.utils DEBUG Updating URI from https://s3.amazonaws.com/iii-tutorial-v2/student14/12473367605540.jpg to https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/12473367605540.jpg
+13:40:03,489 botocore.endpoint DEBUG Response received to retry, sleeping for 0 seconds
+13:40:03,489 botocore.awsrequest DEBUG Rewinding stream: <s3transfer.utils.ReadFileChunk object at 0x000001CE53EA5400>
+13:40:03,489 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x000001CE53C5DC80>
+13:40:03,489 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001CE53BB7240>>
+13:40:03,489 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001CE53157A20>>
+13:40:03,489 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001CE52E26620>
+13:40:03,489 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001CE53E8C978>>
+13:40:03,489 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.ap-northeast-1.amazonaws.com/iii-tutorial-v2/student14/12473367605540.jpg
+13:40:03,490 botocore.utils DEBUG URI updated to: https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/12473367605540.jpg
+13:40:03,490 botocore.auth DEBUG Calculating signature using v4 auth.
+13:40:03,490 botocore.auth DEBUG CanonicalRequest:
+PUT
+/student14/12473367605540.jpg
+
+content-md5:Q8/YkWKrnvWazKkPYKf/wg==
+host:iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200810T054003Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:40:03,490 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20200810T054003Z
+20200810/ap-northeast-1/s3/aws4_request
+c713d3539f99d01fe93c3f0a55fe1af7ae10a963be7543dc8d0c340d67939ee6
+13:40:03,490 botocore.auth DEBUG Signature:
+3c1c84349fdd26dd23ce9539f73acc157fc294fa0678739c43abfa7b5d6cea15
+13:40:03,490 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x000001CE53C5DD08>
+13:40:03,490 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com/student14/12473367605540.jpg, headers={'User-Agent': b'Boto3/1.14.38 Python/3.7.0 Windows/10 Botocore/1.17.38', 'Content-MD5': b'Q8/YkWKrnvWazKkPYKf/wg==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200810T054003Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAR4NDUH53GWDLQFNM/20200810/ap-northeast-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=3c1c84349fdd26dd23ce9539f73acc157fc294fa0678739c43abfa7b5d6cea15', 'Content-Length': '165076'}>
+13:40:03,491 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443
+13:40:03,633 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+13:40:03,719 botocore.awsrequest DEBUG 100 Continue response seen, now sending request body.
+13:40:04,5 urllib3.connectionpool DEBUG https://iii-tutorial-v2.s3.ap-northeast-1.amazonaws.com:443 "PUT /student14/12473367605540.jpg HTTP/1.1" 200 0
+13:40:04,5 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'pbtSLu+O1KqL+ZZpBRa4dFrPNOrVPxoXHU17X/lPQC8WHFDe0tw+8G4sPltJ4TEFfpS48M94xbI=', 'x-amz-request-id': 'E573134EC3C5951B', 'Date': 'Mon, 10 Aug 2020 05:40:05 GMT', 'ETag': '"43cfd89162ab9ef59acca90f60a7ffc2"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+13:40:04,5 botocore.parsers DEBUG Response body:
+b''
+13:40:04,6 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001CE53E8C5C0>
+13:40:04,6 botocore.retryhandler DEBUG No retry needed.
+13:40:04,6 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001CE53E8C2B0>>
+13:40:04,6 botocore.utils DEBUG S3 request was previously redirected, not redirecting.
+13:40:04,6 s3transfer.utils DEBUG Releasing acquire 0/None
+13:40:04,9 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.line.me:443
+13:40:04,160 urllib3.connectionpool DEBUG https://api.line.me:443 "POST /v2/bot/message/reply HTTP/1.1" 200 2
+13:40:04,163 werkzeug INFO 127.0.0.1 - - [10/Aug/2020 13:40:04] "[37mPOST /callback HTTP/1.1[0m" 200 -
+13:43:13,868 werkzeug INFO  * Detected change in 'E:\\AWS\\S3_demo.py', reloading
