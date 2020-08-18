@@ -13,7 +13,7 @@ from linebot.models import (
 from linebot.models import ImageMessage
 
 # AWS S3
-from S3_demo import AwsS3
+from S3_demo import upload_file
 
 app = Flask(__name__)
 
@@ -65,7 +65,7 @@ def handler_image_message(event):
         for chunk in message_content.iter_content():
             fd.write(chunk)
     # upload file to S3
-    AwsS3.upload_file(file_name, "iii-tutorial-v2", f"student14/{file_name}")
+    upload_file(file_name, "iii-tutorial-v2", f"student14/{file_name}")
 
     # reply message
     line_bot_api.reply_message(
