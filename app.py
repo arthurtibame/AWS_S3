@@ -18,14 +18,17 @@ from linebot.models import ImageMessage
 from S3_demo import upload_file
 
 app = Flask(__name__)
+
 config = configparser.ConfigParser()
 config.read('config.ini')
-token = config.get('LINE', 'CHANNEL_ACCESS_TOKEN')
-secret = config.get('LINE', 'CHANNEL_SECRET')
+token: str = config.get('LINE', 'CHANNEL_ACCESS_TOKEN')
+secret: str = config.get('LINE', 'CHANNEL_SECRET')
 
 line_bot_api = LineBotApi(token)
 handler = WebhookHandler(secret)
 
+
+@staticmethod
 
 @app.route("/callback", methods=['POST'])
 def callback():
