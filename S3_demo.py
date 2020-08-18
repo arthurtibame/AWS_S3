@@ -35,7 +35,7 @@ class AwsS3(object):
             logging.error(e)
             return False
         
-        logging.info(self.successful_message)
+        logging.info(self._successful_message)
         return True
 
     def download_file(self, file_name, bucket, object_name=None):
@@ -58,6 +58,7 @@ class AwsS3(object):
         except ClientError as e:
             logging.error(e)
             return False
+        logging.info(self._successful_message)
         return True
     
     
@@ -79,6 +80,7 @@ class AwsS3(object):
         except ClientError as e:
             logging.error(e)
             return False
+        logging.info(self._successful_message)
         return True
 
 if __name__ == "__main__":
